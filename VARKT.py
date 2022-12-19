@@ -15,9 +15,9 @@ from scipy import constants
  
 
 # данные Кербина
-m0 = 287000 + 4725 
-M = 46904 # масса с топливом
-Ft = 3268861.02
+m0 = 46904 
+M = m0 + 41482 # масса с топливом
+Ft = 3268861.02 # тк сами рассчитать не смогли, взяли среднее из интернета
 Cf = 0.5
 ro = 1.293 # плотность воздуха
 S = constants.pi * ((6.6/2)**2)
@@ -38,8 +38,6 @@ v0 = 0
 t = np.linspace(0, 34, 1080) 
 
 solve = integrate.solve_ivp(dv_dt, t_span = (0, max(t)), y0 = [v0], t_eval = t)
-
-print(solve)
 
 x = solve.t
 y = solve.y[0]
