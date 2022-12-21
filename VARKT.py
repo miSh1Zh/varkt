@@ -43,7 +43,7 @@ x = solve.t
 y = solve.y[0]
 
 plt.figure(figsize=(7, 6))
-plt.plot(x, y, '-r', label="first")
+plt.plot(x, y, '-r', label="v(t)")
 plt.legend()
 plt.grid(True)
 plt.show()
