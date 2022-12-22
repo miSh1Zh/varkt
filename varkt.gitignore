@@ -1,2 +1,16 @@
-#игнорировать .py файлы
-*.py
+ы# игнорируем фото
+*.jp?g
+*.png
+*.gif
+*.svg
+*.pdf
+*.xls?
+# исключить из проекта файлы движка wordpress
+/public/*
+/wp-content/*
+!/wp-content/
+/wp-content/themes/*
+!/wp-content/themes/
+/wp-content/themes/папка_темы/*
+!/wp-content/themes/папка_темы/
+!/wp-content/themes/папка_темы/*
